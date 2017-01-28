@@ -8,6 +8,17 @@ plusOneSum([1, 2, 3, 4]); // 14
 
 */
 
+var plusOneSum = function(array){
+  newArray = [];
+  count = 0;
+  newArray =  array.map(function(x){
+  return  x + 1
+  });
+  for(var i = 0; i < newArray.length; i++){
+  count = count + newArray[i];
+}
+return count;
+}
 
 
 /*
@@ -17,6 +28,7 @@ Write a function that accepts a multi dimensional array and returns a flattened 
 flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
 */
+
 
 
 
