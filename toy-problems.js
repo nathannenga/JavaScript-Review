@@ -86,3 +86,43 @@ console.log(sum(2,3));   // Outputs 5
 console.log(sum(2)(3));  // Outputs 5
 
 */
+
+
+
+//fizzBuzz
+
+var fizzBuzz = function(){
+  for (var i = 0; i < 101; i++){
+    if (i % 3 == 0 && i % 5 == 0){
+      console.log('FizzBuzz')
+    } else if (i % 5 == 0){
+        console.log('Buz')
+      } else if (i % 3 == 0){
+          console.log('Fizz')
+        } else {
+          console.log(i)
+        }
+      }
+    }
+
+
+
+
+
+
+
+//palindrome
+
+var palindrome = function(str){
+  var newStr = str.split(' ').join('').split('').reverse().join('');
+  if(newStr == str.split(' ').join('')){
+    console.log("yes");
+  } else {
+    console.log("no");
+  }
+}
+
+
+
+
+}
